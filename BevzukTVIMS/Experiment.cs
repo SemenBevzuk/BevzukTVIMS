@@ -82,10 +82,12 @@ namespace BevzukTVIMS
             {
                 double temp;
                 int cycle_counter = 1;
-                temp = Convert.ToDouble(rand.Next(100))/100;
+                temp = rand.NextDouble();
+                //temp = Convert.ToDouble(rand.Next(100))/100;
                 while (!IsDetected(temp))
                 {
-                    temp = Convert.ToDouble(rand.Next(100))/100;
+                    temp = rand.NextDouble();
+                    //temp = Convert.ToDouble(rand.Next(100))/100;
                     cycle_counter++;
                 }
                 bool IsFind = false;
